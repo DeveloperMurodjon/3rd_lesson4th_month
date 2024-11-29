@@ -378,3 +378,256 @@ if (((num79 < 0 && num80 > 0) || (num79 > 1 && num80 < 0)) && res40 > 0) {
 } else {
   alert(`mos emas`);
 }
+//Boolean6 Uchta A,B,C butun sonlar berilgan. Jumlani rostlikka tekshiring:"A<=B<=C"
+let son1 = +prompt("Son1 ni kiriting:");
+let son2 = +prompt("Son2 ni kiriting:");
+let son3 = +prompt("Son3 ni kiriting:");
+if (son1 <= son2 && son2 <= son3) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//Boolean7 Uchta A,B,c butun sonlar berilgan. Jumlani rostlikka tekshiring."B soni A va C sonlari orasida yotadi"
+let son4 = +prompt("Son1 ni kiriting:");
+let son5 = +prompt("Son2 ni kiriting:");
+let son6 = +prompt("Son3 ni kiriting:");
+if ((son4 < son5 && son5 < son6) || (son4 > son5 && son5 > son6)) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//Boolean8 Ikkita butun A va B sonlari berilgan. Jumlani rostlikka tekshiring:"A va B sonlari toq sonlar".
+let son7 = +prompt("Son1 ni kiriting:");
+let son8 = +prompt("Son2 ni kiriting:");
+if (son7 % 2 !== 0 && son8 % 2 !== 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//Boolean9 Ikki butun A va B sonlari berilgan. Jumlani rostlikka tekshiring A va B sonlarining hech bo'lmaganda bittasi toq son"
+let son9 = +prompt("Son1 ni kiriting:");
+let son10 = +prompt("Son2 ni kiriting:");
+if (son9 % 2 !== 0 || son10 % 2 !== 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//Boolean10 Ikki butun A va B sonlari berilgan. Jumlani rostlikka tekshiring. "A va B sonlarining faqat nittasi toq son".
+let son11 = +prompt("Son1 ni kiriting:");
+let son12 = +prompt("Son2 ni kiriting:");
+if (
+  (son11 % 2 !== 0 && son12 % 2 == 0) ||
+  (son11 % 2 == 0 && son12 % 2 !== 0)
+) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//Boolean11 Ikki butun A va B sonlari berigan. Jumlani rostlikka tekshiring: "A va B sonlarining har ikkalasi ham yoki toqson yoki juftson"
+let son13 = +prompt("Son1 ni kiriting:");
+let son14 = +prompt("Son2 ni kiriting:");
+if (
+  (son13 % 2 !== 0 && son14 % 2 !== 0) ||
+  (son13 % 2 == 0 && son14 % 2 == 0)
+) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//Boolean12 Uchta A,b, c butun sonlar berilgan. Jumlani rostlikka tekshiring. "A,B,c sonlarining har biri musbatdir"
+let son15 = +prompt("Son1 ni kiriting:");
+let son16 = +prompt("Son2 ni kiriting:");
+let son17 = +prompt("Son3 ni kiriting:");
+if (son15 > 0 && son16 > 0 && son17 > 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//Boolean13 Uchta A, B, C butun sonlar berilgan. Jumlani rostlikka tekshiring."A, B, C sonlarning hech bo'lmaganda bittasi musbat son"
+let son18 = +prompt("Son1 ni kiriting:");
+let son19 = +prompt("Son2 ni kiriting:");
+let son20 = +prompt("Son3 ni kiriting:");
+if (
+  (son18 > 0 && son19 < 0 && son20 < 0) ||
+  (son18 < 0 && son19 > 0 && son20 < 0) ||
+  (son18 < 0 && son19 < 0 && son20 > 0)
+) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//Boolean14 Uchta A,B, C butun sonlar berilgan. Jumlani roslikka tekshiring. "A,B,C sonlarida faqat bittasi musbat son".
+let son21 = +prompt("Son1 ni kiriting:");
+let son22 = +prompt("Son2 ni kiriting:");
+let son23 = +prompt("Son3 ni kiriting:");
+if (son21 > 0 || son22 < 0 || son23 < 0) {
+  console.log(true);
+} else {
+  false;
+}
+//Boolean15 Uchta A,B,C butun sonlar berilgan. Jumlani rostlikka tekshiring:"A,B,C sonlardan faqat  ikkitasi musbat son"
+let son24 = +prompt("Son1 ni kiriting:");
+let son25 = +prompt("Son2 ni kiriting:");
+let son26 = +prompt("Son3 ni kiriting:");
+if (
+  (son24 > 0 && son25 > 0 && son26 < 0) ||
+  (son24 > 0 && son25 < 0 && son26 > 0) ||
+  (son24 < 0 && son25 > 0 && son26 > 0)
+) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//Boolean16 Musbat Butun son berilgan. Jumlani rostlikka tekshiring:" Berilgan son ikki xonali juft son".
+let son27 = +prompt("Sonni kiriting:");
+if (son27 > 9 && son27 < 100 && son27 % 2 == 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//QO'SHIMCHA MASALALAR
+//1.Uchta sonning yig'indisi manfiy emas va ulardan hech bo'lmaganda bittasi 5 ga bo'linadi.
+let digit1 = +prompt("Son1 ni kiriting:");
+let digit2 = +prompt("Son2 ni kiriting:");
+let digit3 = +prompt("Son3 ni kiriting:");
+if (
+  digit1 + digit2 + digit3 >= 0 &&
+  (digit1 % 5 == 0 || digit2 % 5 == 0 || digit3 % 5 == 0)
+) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//2.Berilgan sonning raqamlari orasida 0 raqami mavjud yoki 7 raqami yo'qligini aniqlang.
+let number1 = +prompt("Sonni kiriting:");
+let digit4 = Math.floor(number / 100);
+let digit5 = Math.floor((number % 100) / 10);
+let digit6 = number1 % 10;
+
+if (
+  digit4 === 0 ||
+  digit5 === 0 ||
+  digit6 === 0 ||
+  (digit4 !== 7 && digit5 !== 7 && digit6 !== 7)
+) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+
+//3.Ikkita sonning biri 2 ga, biri 3 ga bo'linadi, lekin ularning yig'indisi 6 ga bo'linmaydi.
+let digit7 = +prompt(`Son1 ni kiriting:`);
+let digit8 = +prompt(`Son2 ni kiriting:`);
+let res = digit7 + digit8;
+if (
+  ((digit7 % 2 == 0 && digit8 % 3 == 0) ||
+    (digit7 % 3 == 0 && digit8 % 2 == 0)) &&
+  res % 6 !== 0
+) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//4.Uchta sonning hech bo'lmaganda ikkitasining ayirmasi manfiy ekanligini tekshiring.
+let digit9 = +prompt(`Son1 ni kirting:`);
+let digit10 = +prompt(`Son2 ni kiritng`);
+let digit11 = +prompt(`Son3 ni kriting:`);
+
+if (digit9 - digit10 < 0 || digit9 - digit11 < 0 || digit10 - digit11 < 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//5.Berilgan son ikki xonali va raqamlari yig'indisi toq ekanligini aniqlang.
+let number2 = +prompt(`Sonni kiriting`);
+let digit12 = Math.floor(number2 / 10);
+let digit13 = number2 % 10;
+if (number2 > 9 && number2 < 100 && (digit12 + digit13) % 2 == 1) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//6.Uchta sonning bittasi musbat, ikkinchisi manfiy, uchinchisi esa 0 ga teng ekanligini tekshiring.
+let dig14 = +prompt("Son1 ni kiriting:");
+let dig15 = +prompt("Son2 ni kiriting:");
+let dig16 = +prompt("Son3 ni kiriting:");
+
+if (
+  (dig14 > 0 && dig15 < 0 && dig16 == 0) ||
+  (dig14 > 0 && dig15 == 0 && dig16 < 0) ||
+  (dig14 < 0 && dig15 == 0 && dig16 > 0) ||
+  (dig14 < 0 && dig15 > 0 && dig16 == 0) ||
+  (dig14 == 0 && dig15 > 0 && dig16 < 0) ||
+  (dig14 == 0 && dig15 < 0 && dig16 > 0)
+) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//7.Ikkita sonning biri juft, biri toq, va ularning yig'indisi 15 ga teng ekanligini aniqlang.
+let dig17 = +prompt("Son1 ni kiriting:");
+let dig18 = +prompt("Son2 ni kiriting:");
+if (
+  ((dig17 % 2 == 0 && dig18 % 2 == 1) || (dig17 % 2 == 1 && dig18 % 2 == 0)) &&
+  dig17 + dig18 == 15
+) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//8.Berilgan son uch xonali va uning oxirgi raqami 2 ga bo'linadi.
+let dig19 = +prompt(`Sonni kiriting`);
+let number3 = dig19 % 10;
+if (dig19 > 99 && dig19 < 1000 && number3 % 2 == 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//9.Ikkita sonning hech bo'lmaganda biri 5 ga karrali va ularning yig'indisi manfiy emas.
+let dig20 = +prompt(`Sonni kiritng`);
+let dig21 = +prompt(`Son2ni kiritng`);
+if ((dig20 % 5 == 0 || dig21 % 5 == 0) && dig20 + dig21 > 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//10.Uchta sonning faqat bittasi musbat va ularning yig'indisi manfiy ekanligini tekshiring.
+let dig22 = +prompt(`Sonni kiriting`);
+let dig23 = +prompt(`Son2ni kiriting`);
+let dig24 = +prompt(`Son3ni kiriting`);
+if (
+  ((dig22 > 0 && dig23 < 0 && dig24 < 0) ||
+    (dig22 < 0 && dig23 > 0 && dig24 < 0) ||
+    (dig22 < 0 && dig23 < 0 && dig24 > 0)) &&
+  dig22 + dig23 + dig24 < 0
+) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//11.Berilgan son 10 ga bo'linadi, lekin 25 ga bo'linmaydi.
+let dig25 = +prompt(`Sonni kiritng`);
+if (dig25 % 10 == 0 && dig25 % 25 !== 0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//12.Ikkita sonning biri musbat va ularning farqi 50 dan katta ekanligini aniqlang.
+let dig26 = +prompt(`Sonni kiriting`);
+let dig27 = +prompt(`Sonni kiriting`);
+if (
+  ((dig26 < 0 && dig27 > 0) || (dig26 > 0 && dig27 < 0)) &&
+  (dig26 - dig27 > 50 || dig27 - dig26 > 50)
+) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+//13.Uchta sonning eng kattasi 100 dan katta va qolgan ikkisi 0 dan kichik.
+//14.Berilgan sonning raqamlari yig'indisi 15 ga teng yoki undan katta.
+//15.Ikkita sonning biri 3 ga karrali va ikkinchisi 5 ga bo'linadi, lekin ularning ko'paytmasi 30 ga bo'linmaydi.
+//16.Uchta sonning ikkitasining yig'indisi uchinchisidan kichik va ular musbat.
+//17.Berilgan son 7 ga bo'linadi va 9 ga bo'linmaydi, yoki 11 ga bo'linadi.
+//18.Ikkita sonning hech bo'lmaganda biri 10 dan katta va ularning ko'paytmasi manfiy.
+//19.Uchta sonning faqat ikkitasining yig'indisi musbat va uchinchisi manfiy ekanligini aniqlang.
+//20.Berilgan son 4 ga bo'linadi, lekin 100 ga bo'linmaydi yoki 400 ga bo'linadi.
